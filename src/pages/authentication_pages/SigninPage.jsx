@@ -8,7 +8,7 @@ import { WarningButton } from "./Authentication_Page_Components/WarningButton"
 import { Animation } from './Authentication_Page_Components/Animation'
 
 
-export const SignupPage = () => {
+export const SigninPage = () => {
 
     return <div className="grid grid-cols-10">
         <div className=" h-screen flex justify-center col-span-4 ">
@@ -16,10 +16,10 @@ export const SignupPage = () => {
 
                 <div className="p-2  ">
                     <div className="pb-2">
-                        <Heading Title={"Register your Account"} />
+                        <Heading Title={"Log in to your Account"} />
                     </div>
                     <div className="py-2 text-center">
-                        <SubHeading Title={"Enter Your Details to Start Your Journey With us"} />
+                        <SubHeading Title={"Welcome Back! Select Method to Log in"} />
                     </div>
                     <div className="flex justify-center pt-6 pb-1">
                         <div className="px-4">
@@ -37,15 +37,13 @@ export const SignupPage = () => {
                     </div>
 
 
-                    <InputBox placeholder={"Enter Your First Name"} type={"text"} />
-                    <InputBox placeholder={"Enter Your Last Name"} type={"text"} />
                     <InputBox placeholder={"Enter Your Email"} type={"email"} />
                     <InputBox placeholder={"Enter Your Password"} type={"password"} />
 
                     <ForgotPassCompo to={"/signin"} buttontext={"Forgot Password?"} />
 
-                    <Button Label={"Register"} />
-                    <WarningButton buttontext={"Sign in"} to={"/signin"} label={"Already Have an Account?"} />
+                    <Button Label={"Log in"} />
+                    <WarningButton buttontext={"Sign up"} to={"/signup"} label={"Already Have an Account?"} />
 
 
                 </div>
