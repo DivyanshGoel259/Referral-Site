@@ -10,12 +10,12 @@ import { Animation } from './Authentication_Page_Components/Animation'
 
 export const SignupPage = () => {
 
-    return <div className="grid grid-cols-10">
-        <div className=" h-screen flex justify-center col-span-4 ">
+    return <div className="bg-[#E7FBE6] lg:grid lg:grid-cols-10">
+        <div className=" h-screen flex justify-center lg:col-span-4 ">
             <div className="flex flex-col justify-center ">
 
                 <div className="p-2  ">
-                    <div className="pb-2">
+                    <div className="pb-2 text-center">
                         <Heading Title={"Register your Account"} />
                     </div>
                     <div className="py-2 text-center">
@@ -52,7 +52,7 @@ export const SignupPage = () => {
             </div>
 
         </div>
-        <div className="col-span-6 h-screen flex items-center justify-center">
+        <div className="hidden lg:flex  lg:col-span-6 h-screen flex items-center justify-center">
             <Animation />
         </div>
 

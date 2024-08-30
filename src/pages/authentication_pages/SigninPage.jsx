@@ -10,16 +10,16 @@ import { Animation } from './Authentication_Page_Components/Animation'
 
 export const SigninPage = () => {
 
-    return <div className="grid grid-cols-10">
-        <div className=" h-screen flex justify-center col-span-4 ">
+    return <div className="bg-[#E7FBE6] lg:grid lg:grid-cols-10">
+        <div className=" h-screen flex justify-center lg:col-span-4 ">
             <div className="flex flex-col justify-center ">
 
                 <div className="p-2  ">
-                    <div className="pb-2">
+                    <div className="pb-2 text-center">
                         <Heading Title={"Log in to your Account"} />
                     </div>
                     <div className="py-2 text-center">
-                        <SubHeading Title={"Welcome Back! Select Method to Log in"} />
+                        <SubHeading Title={"Welcome Back! Choose a Method to Log in"} />
                     </div>
                     <div className="flex justify-center pt-6 pb-1">
                         <div className="px-4">
@@ -37,20 +37,21 @@ export const SigninPage = () => {
                     </div>
 
 
+                    
                     <InputBox placeholder={"Enter Your Email"} type={"email"} />
                     <InputBox placeholder={"Enter Your Password"} type={"password"} />
 
                     <ForgotPassCompo to={"/signin"} buttontext={"Forgot Password?"} />
 
                     <Button Label={"Log in"} />
-                    <WarningButton buttontext={"Sign up"} to={"/signup"} label={"Already Have an Account?"} />
+                    <WarningButton buttontext={"Sign up"} to={"/signup"} label={"Create New Account?"} />
 
 
                 </div>
             </div>
 
         </div>
-        <div className="col-span-6 h-screen flex items-center justify-center">
+        <div className="hidden lg:flex  lg:col-span-6 h-screen flex items-center justify-center">
             <Animation />
         </div>
 
