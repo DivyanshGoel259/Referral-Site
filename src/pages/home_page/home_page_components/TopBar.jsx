@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 export const TopBar = () => {
+    const navigation = useNavigate()
     const text = "Easy Jobs".split(" ");
     return <div>
 
         <div className="flex justify-between">
-            <div className='text-2xl p-2 font-bold text-blue-500'>
+            <div className='text-3xl p-2 font-bold text-white'>
                 {text.map((el, i) => (
 
                     <motion.span
@@ -25,38 +27,40 @@ export const TopBar = () => {
                 <div className="flex justify-between p-2">
                     <div className="p-2">
                         <button
-                            className="hover:text-blue-600 relative group p-2 w-full text-gray-400 font-medium transition-all duration-300 ease-in-out hover:text-black"
+                            className=" relative group p-2 w-full text-white font-medium transition-all duration-300 ease-in-out "
                         >
                             <span className="relative inline-block transition-all duration-300 ease-in-out ">
                                 Blogs
-                                <span className="absolute left-0 bottom-0 w-full h-0.5 bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                                <span className="absolute left-0 bottom-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
                             </span>
                         </button>
                     </div>
                     <div className="p-2">
                         <button
-                            className="hover:text-blue-600 relative group p-2 w-full text-gray-400 font-medium transition-all duration-300 ease-in-out hover:text-black"
+                            className=" relative group p-2 w-full text-white font-medium transition-all duration-300 ease-in-out "
                         >
                             <span className="relative inline-block transition-all duration-300 ease-in-out ">
                                 About us
-                                <span className="absolute left-0 bottom-0 w-full h-0.5 bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                                <span className="absolute left-0 bottom-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
                             </span>
                         </button>
                     </div>
                     <div className="p-2">
                         <button
-                            className="hover:text-blue-600 relative group p-2 w-full text-gray-400 font-medium transition-all duration-300 ease-in-out hover:text-black"
+                            className=" relative group p-2 w-full text-white font-medium transition-all duration-300 ease-in-out"
                         >
                             <span className="relative inline-block transition-all duration-300 ease-in-out ">
                                 Courses
-                                <span className="absolute left-0 bottom-0 w-full h-0.5 bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                                <span className="absolute left-0 bottom-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
                             </span>
                         </button>
                     </div>
 
                 </div>
                 <div className="p-4">
-                    <motion.button whileTap={{ scale: 0.85 }} className="px-8 py-2   w-full text-white border rounded-[20px] bg-blue-600">
+                    <motion.button onClick={()=>{
+                        navigation("/signin")
+                    }} whileTap={{ scale: 0.85 }} className="px-8 py-2  bg-[#1E201E] w-full text-white rounded-[20px] ">
                         Log in
                     </motion.button>
                 </div>

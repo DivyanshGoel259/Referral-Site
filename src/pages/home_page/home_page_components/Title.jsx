@@ -1,33 +1,21 @@
-"use client";
-import { TypewriterEffectSmooth } from "./TypeWriterEffect";
-export default function AnimatedTitle() {
-  const words = [
-    {
-      text: "We ",
-      className: "text-black dark:text-black"
-    },
-    {
-      text: "Connect ",
-      className: "text-black dark:text-black"
-    },
-    {
-      text: "Talent ",
-      className: "text-black dark:text-black"
-    },
-    {
-      text: "to ",
-      className: "text-black dark:text-black"
-    },
-    {
-      text: "Opportunity.",
-      className: "text-blue-500 dark:text-blue-500",
-    },
-  ];
-  return (
-    <div className="flex flex-col items-center justify-center w-full ">
-      
-      <TypewriterEffectSmooth words={words} />
-      
-    </div>
-  )
+import React from 'react';
+
+//importing typewriter-effect
+import Typewriter from "typewriter-effect";
+
+export default function AnimatedTitle({title}) {
+    return (
+        <div className="text-5xl font-bold text-slate-100">
+            <Typewriter
+                onInit={(typewriter) => {
+                    typewriter
+                        .typeString(title)
+                        .pauseFor(1000)
+                        .deleteAll()
+                        .typeString("Get Easy Jobs!")
+                        .start();
+                }}
+            />
+        </div>
+    );
 }

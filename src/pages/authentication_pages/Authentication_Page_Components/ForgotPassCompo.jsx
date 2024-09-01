@@ -6,14 +6,14 @@ export const ForgotPassCompo = ({ buttontext, to }) => {
         <div>
             <div  className="p-2 flex items-center">
                 <motion.input whileTap={{ scale: 0.85 }} className="items-center h-4 w-4" type="checkbox" name="terms" value="agree" />
-                <div className="ml-2">
+                <div className="ml-2 text-white">
                     Remember me
                 </div>
             </div>
 
         </div>
 
-        <div className='p-2 text-blue-500'>
+        <div className='p-2 text-white'>
             <Link className="pointer underline pl-1 cursor-pointer" to={to}>{buttontext}</Link>
         </div>
 
