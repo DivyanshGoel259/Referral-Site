@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 
 export default function AnimatedTitle({title}) {
     return (
-        <div className="text-5xl font-bold text-slate-100">
+        <div className="text-3xl  md:text-5xl font-bold text-slate-100">
             <Typewriter
                 onInit={(typewriter) => {
                     typewriter
