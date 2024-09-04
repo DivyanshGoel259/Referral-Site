@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "../../../lib/utilis";
+import { cn } from "../../../../lib/utilis";
 import { motion, stagger, useAnimate, useInView } from "framer-motion";
 import { useEffect } from "react";
 

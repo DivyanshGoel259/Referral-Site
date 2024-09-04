@@ -1,5 +1,5 @@
-import { HeroSection } from "./home_page_components/HeroSection";
-import { TopBar } from "./home_page_components/TopBar";
+import { HeroSection } from "./home_page_components/main_components/HeroSection";
+import { TopBar } from "./home_page_components/main_components/TopBar";
 
 export const HomePage = () => {
     return (

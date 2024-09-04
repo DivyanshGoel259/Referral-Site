@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { NavMobile } from "./NavBarMobile";
+import { NavMobile } from "../messed_components/NavBarMobile";
 import { useState } from "react";
 export const TopBar = () => {
     const [navbarClicked, setMenuBarClick] = useState(false)

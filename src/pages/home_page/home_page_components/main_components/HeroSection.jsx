@@ -1,10 +1,10 @@
-import animationData from './Animation.json';
+import animationData from '../messed_components/Animation.json';
 import Lottie from 'lottie-react';
-import AnimatedTitle from './Title';
-import { SubTitle } from './SubTitle';
-import { Button } from './Button';
+import AnimatedTitle from '../messed_components/Title';
+import { SubTitle } from '../messed_components/SubTitle';
+import { Button } from '../messed_components/Button';
 import { useNavigate } from 'react-router-dom';
-import '../../../App.css';
+import '../../../../App.css';
 
 export const HeroSection = () => {
     const navigation = useNavigate();
