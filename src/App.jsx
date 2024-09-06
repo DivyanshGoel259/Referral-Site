@@ -7,6 +7,8 @@ import { ProfilePic } from './pages/profile_page/profile_page_components/Profile
 import { Name } from './pages/profile_page/profile_page_components/Name'
 import { ProfileType } from './pages/profile_page/profile_page_components/ProfileType'
 import { Bio } from './pages/profile_page/profile_page_components/Bio'
+import { SocialHandleBox } from './pages/profile_page/profile_page_components/SocialHandleBox'
+import { ProfileCard } from './pages/profile_page/profile_page_main_components/ProfileCard'
 
 function App() {
 
@@ -17,7 +19,7 @@ function App() {
           <Route path='/signup' element={<SignupPage />} />
           <Route path='/signin' element={<SigninPage />} />
           <Route path='/' element={<HomePage/>} />
-          <Route path='/profile' element={<Bio bio={"I am a passionate full stack developer"}/>} />
+          <Route path='/profile' element={<ProfileCard/>} />
         </Routes>
       </BrowserRouter>
     </>

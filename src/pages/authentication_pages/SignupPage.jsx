@@ -53,8 +53,8 @@ export const SignupPage = () => {
                         </div>
 
 
-                        <InputBox placeholder={"Enter Your First Name"} type={"text"} />
-                        <InputBox placeholder={"Enter Your Last Name"} type={"text"} />
+                        <InputBox placeholder={"Enter Your Full Name"} type={"text"} />
+                        
                         <InputBox placeholder={"Enter Your Email"} type={"email"} />
                         <InputBox placeholder={"Enter Your Password"} type={"password"} />
 

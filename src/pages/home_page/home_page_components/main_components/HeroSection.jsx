@@ -16,10 +16,10 @@ export const HeroSection = () => {
         <div className="flex flex-col lg:flex-row items-center md:items-stretch">
             <div className="flex-1 flex flex-col justify-center items-center lg:items-start p-2">
                 <div className="px-8 py-4 text-center lg:text-left">
-                    <AnimatedTitle title={"We Connect Talent to Opportunity"} />
+                    <AnimatedTitle title={"We Connect Talent to Opportunities"} />
                 </div>
                 <div className="hidden md:block px-8 py-4 text-center lg:text-left">
-                    <SubTitle words={`At Easy Jobs, your skills meet the right platforms. Get referred to leading MNCs and startups while benefiting from our community’s courses and resources. Your journey to a dream job starts here.`} />
+                    <SubTitle words={`At Easy Jobs, your skills meet the right platform. Get referred to leading MNCs and startups while benefiting from our community’s courses and resources. Your journey to your dream job starts here.`} />
                 </div>
                 <div className="hidden lg:flex py-6 px-8 md:px-8 md:py-0 md:mt-4 md:text-left">
                     <Button Label={"Get Started"} onTap={handleOnclick} />
