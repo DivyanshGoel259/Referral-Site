@@ -9,6 +9,9 @@ import { ProfileType } from './pages/profile_page/profile_page_components/Profil
 import { Bio } from './pages/profile_page/profile_page_components/Bio'
 import { SocialHandleBox } from './pages/profile_page/profile_page_components/SocialHandleBox'
 import { ProfileCard } from './pages/profile_page/profile_page_main_components/ProfileCard'
+import { StepperforProfile } from './pages/profile_page/profile_page_components/Stepper'
+import { DetailedProfile } from './pages/profile_page/profile_page_main_components/DetailedProfile'
+import { Profile } from './pages/profile_page/Profile'
 
 function App() {
 
@@ -19,7 +22,7 @@ function App() {
           <Route path='/signup' element={<SignupPage />} />
           <Route path='/signin' element={<SigninPage />} />
           <Route path='/' element={<HomePage/>} />
-          <Route path='/profile' element={<ProfileCard/>} />
+          <Route path='/profile' element={<Profile/>} />
         </Routes>
       </BrowserRouter>
     </>

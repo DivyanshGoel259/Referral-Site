@@ -18,7 +18,7 @@ export const HomePage = () => {
                 </ul>
             </div>
             <div className="px-4">
-                <TopBar />
+                <TopBar Color={"white"} NavBarItems={["Blogs","About us","Courses"]} ButtonName={"Log in"} Navbar={true}/>
             </div>
             <div className="flex flex-col justify-center items-center min-h-[calc(90vh-4rem)]"> {/* Adjust the height to account for the TopBar */}
                 <HeroSection />
